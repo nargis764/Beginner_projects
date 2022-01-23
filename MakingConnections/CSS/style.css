@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation Bar */
+.navbar {
+  background-color: rgb(0, 0, 0);
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-links {
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+li > h1 {
+  margin-right: 10px;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
+  margin: auto 10px;
+}
+.nav-btn {
+  background-color: rgb(23, 162, 184);
+  height: 30px;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 930px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: cornflowerblue;*/
+}
+
+.left {
+  width: 520px;
+  height: 400px;
+  /*background-color: chocolate;*/
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  width: 380px;
+  height: 400px;
+  /* background-color: yellow;*/
+}
+/* User Card element */
+.card {
+  width: 520px;
+  margin: 30px auto;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 2px 2px 2px 2px;
+}
+
+.top-bar {
+  width: 518px;
+  height: 80px;
+  background-color: rgb(23, 162, 184);
+}
+.top-bar + img {
+  border: 2px solid rgb(211, 211, 211);
+  border-radius: 50%;
+  padding: 3px;
+  position: relative;
+  margin-left: 20px;
+  bottom: 30px;
+}
+#profile-details {
+  margin-top: -30px;
+  margin-left: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+#profile-details > h2,
+.location,
+.profile-info {
+  margin-bottom: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.edit-profile {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.location > img,
+.edit-profile > img {
+  margin-right: 10px;
+}
+
+.edit-profile > button {
+  background-color: inherit;
+  border: none;
+}
+
+/* user education info (bottom-left) */
+.education-info {
+  width: 520px;
+  border: 2px solid rgb(128, 128, 128);
+  padding-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+.education-info > div {
+  background-color: rgb(51, 51, 51);
+  padding: 5px 0;
+}
+.education-info > div > p {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.education-info > p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.education-info > *:nth-child(2) {
+  font-weight: bold;
+}
+.education-info > *:nth-child(3) {
+  color: rgb(128, 128, 128);
+}
+
+/* user connection requests (top-right) */
+.request {
+  width: 380px;
+  margin: 30px auto;
+  border: 2px solid rgb(128, 128, 128);
+  padding-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+.confirm-request {
+  background-color: rgb(51, 51, 51);
+  padding: 15px 0;
+}
+.confirm-request > p {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.number-of-requests {
+  background-color: rgb(211, 211, 211);
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+.request-1,
+.request-2 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 20px;
+}
+.request-1 > *:first-child,
+.request-2 > *:first-child {
+  margin-right: 10px;
+}
+.request-1 > *:nth-child(2) {
+  margin-right: 200px;
+}
+.request-2 > *:nth-child(2) {
+  margin-right: 210px;
+}
+.request-1 > *:nth-child(3),
+.request-2 > *:nth-child(3) {
+  margin-right: 5px;
+}
+
+/* user connections (bottom-right)*/
+.connections {
+  width: 380px;
+  border: 2px solid rgb(128, 128, 128);
+  padding-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+.connection-list {
+  background-color: rgb(51, 51, 51);
+  padding: 15px 0;
+}
+.connection-list > p {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.number-of-connections {
+  background-color: rgb(211, 211, 211);
+  color: black;
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+.connection-1,
+.connection-2,
+.connection-3,
+.connection-4 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.connection-1 > *:first-child,
+.connection-2 > *:first-child,
+.connection-3 > *:first-child,
+.connection-4 > *:first-child {
+  margin-right: 10px;
+}
+.connection-4 > p {
+  margin-bottom: 20px;
+}
+.connection-footer {
+  border-top: 2px solid rgb(128, 128, 128);
+  padding: 5px 0;
+}
+.connection-footer > a {
+  margin-left: 20px;
+}
