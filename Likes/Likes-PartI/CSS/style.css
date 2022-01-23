@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 450px;
+  height: 140px;
+  padding: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 40px;
+  left: 20%;
+  font-size: 1.25rem;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-1 p {
+  width: 150px;
+  text-align: right;
+}
+
+.row-1 button {
+  background-color: rgb(254, 216, 102);
+  padding: 5px 10px;
+  width: 60px;
+  box-shadow: 3px 3px 3px black;
+  font-weight: bold;
+}
