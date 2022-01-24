@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1>DojoWeather</h1>
+        <ul>
+          <li><a href="#" onclick="showAlert()">Burbank</a></li>
+          <li><a href="#" onclick="showAlert()">Chicago</a></li>
+          <li><a href="#" onclick="showAlert()">Dallas</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="current-temperature">
+        <div>
+          <h2 id="city">San Jose</h2>
+        </div>
+        <div class="temperature-scale">
+          <p>show temperature in</p>
+          <form>
+            <select
+              name="temp-scale"
+              id="temp-scale"
+              onchange="convertTemp(this)"
+            >
+              <option>&degC</option>
+              <option>&degF</option>
+            </select>
+          </form>
+        </div>
+      </section>
+      <section class="weather-forecast">
+        <div class="forecast-col-1">
+          <h3>Today</h3>
+          <img src="Images/some_rain.png" width="90" height="90" />
+          <p>some rain</p>
+          <div class="temperature-range">
+            <p class="highest-temp"><span class="temp-value">24</span>&deg</p>
+            <p class="lowest-temp"><span class="temp-value">18</span>&deg</p>
+          </div>
+        </div>
+        <div class="forecast-col-2">
+          <h3>Tomorrow</h3>
+          <img src="Images/some_sun.png" width="90" height="90" />
+          <p>some sun</p>
+          <div class="temperature-range">
+            <p class="highest-temp"><span class="temp-value">27</span>&deg</p>
+            <p class="lowest-temp"><span class="temp-value">19</span>&deg</p>
+          </div>
+        </div>
+        <div class="forecast-col-3">
+          <h3>Friday</h3>
+          <img src="Images/some_clouds.png" width="90" height="90" />
+          <p>some clouds</p>
+          <div class="temperature-range">
+            <p class="highest-temp"><span class="temp-value">21</span>&deg</p>
+            <p class="lowest-temp"><span class="temp-value">16</span>&deg</p>
+          </div>
+        </div>
+        <div class="forecast-col-4">
+          <h3>Saturday</h3>
+          <img src="Images/some_sun.png" width="90" height="90" />
+          <p>some sun</p>
+          <div class="temperature-range">
+            <p class="highest-temp"><span class="temp-value">26</span>&deg</p>
+            <p class="lowest-temp"><span class="temp-value">21</span>&deg</p>
+          </div>
+        </div>
+      </section>
+      <section class="cookie">
+        <img src="Images/cookie.png" width="80" height="80" />
+        <div>
+          <h4>Stop! Cookie time</h4>
+          <p class="cookie-message">
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyze our
+            traffic. <a href="#">Read More...</a>
+          </p>
+        </div>
+        <button onclick="removeCookie(this)">I accept</button>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

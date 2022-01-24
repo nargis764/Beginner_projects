@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(159, 197, 248);
+}
+
+.navbar {
+  width: 700px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+
+.navbar ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 700px;
+  margin: 5px auto;
+}
+
+.current-temperature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin: 20px 0;
+  padding-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.temperature-scale {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  font-size: 1.25rem;
+}
+
+.weather-forecast .forecast-col-1,
+.weather-forecast .forecast-col-2,
+.weather-forecast .forecast-col-3,
+.weather-forecast .forecast-col-4 {
+  width: 160px;
+  height: 290px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.weather-forecast .forecast-col-1 img,
+.weather-forecast .forecast-col-2 img,
+.weather-forecast .forecast-col-3 img,
+.weather-forecast .forecast-col-4 img {
+  border-radius: 50%;
+}
+
+.temperature-range {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  font-weight: bold;
+}
+
+.temperature-range .highest-temp,
+.temperature-range .highest-temp .temp-value {
+  color: rgb(221, 49, 39);
+}
+
+.temperature-range *:last-child {
+  color: rgb(64, 132, 228);
+}
+
+.cookie {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+}
+
+.cookie-message {
+  width: 440px;
+}
+
+.cookie button {
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  background-color: rgb(159, 197, 248);
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-weight: bold;
+}
